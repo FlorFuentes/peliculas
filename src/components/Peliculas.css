@@ -1,0 +1,67 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Bacasime Antique, serif;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 40px auto 100px auto;
+}
+
+.paginacion {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	background-color: black;
+
+
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 999;
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	padding: 10px;
+
+}
+
+.paginacion button {
+	background-color: white;
+	border-radius: 5rem;
+	color: black;
+	padding: 5px 12px;
+	font-variant: small-caps;
+
+	letter-spacing: 2px;
+
+}
+.paginacion button:hover{
+	color:white;
+	background-color: black;
+	transition: background-color 0.5s;
+}
+
+.peliculas-contenedor {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: space-between;
+}
+
+.pelicula {
+	width: calc(25% - 10px);
+	box-sizing: border-box;
+}
+
+.poster {
+	width: 100%;
+	border-radius: 15px;
+}
